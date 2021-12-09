@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvin Quach: Front-End Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="wrapper">
+            <label for="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Navigation menu</span>
+            </label>
+            <input type="checkbox" id="toggle" name="toggle" />
+            <ul class="dropdown">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="heroImage">
+            <img src="./assets/alvinQuach.jpg" alt="Alvin Quach, a headshot image">
+            <div class="wrapper">
+                <div class="typingAnimation">
+                    Alvin Quach, Front-End Developer
+                </div>
+            </div>
+        </div>
+        <p class="description">
+            My passion for community and storytelling is exemplified by creating
+            a great user experience and user interface.
+        </p>
+    </header>
+    <main>
+        <!-- About -->
+        <section class="about" id="about">
+            <div>
+                <h3 class="subtitle">About Me</h3>
+                <p class="description">
+                    Why, hello! I'm your friendly neighborhood web developer. I am a front-end developer with a
+                    background in Marketing and Community
+                    Management. Check out my <a
+                        href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824">blog post</a> to learn
+                    more about my change from marketing to web development and embark through my
+                    journey! In my free time, you can catch me watching the Golden State Warriors and enjoying a nice
+                    cold
+                    IPA!
+                </p>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <div>
+                <h2 class="subtitle">
+                    Skills
+                </h2>
+            </div>
+            <div>
+                <ul class="iconsContainer">
+                    <li>
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass" aria-hidden="true"></i>
+                        <p>Sass</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js-square" aria-hidden="true"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-git-alt" aria-hidden="true"></i>
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-terminal" aria-hidden="true"></i>
+                        <p>Command Line</p>
+                    </li>
+                    <li>
+                        <i class="devicon-firebase-plain" aria-hidden="true"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <p>RESTful APIs</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <p>Responsive Design</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                        <p>Web Accessibility</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <div class="sbs-container">
+            <div class="project-container">
+                <div class="image">
+                    <img src="./assets/loopinThruHoops.png" alt="An image displaying the Loopin Thru Hoops website">
+                </div>
+                <div class="text">
+                    <h1 class="title">Loopin Thru Hoops</h1>
+                    <h4>JavaScript | Firebase | RESTful API | Sass | HTML5</h4>
+                    <p>Want to see how the stars of the 2021 - 2022 NBA season fare against each other? Using the Ball
+                        Don't
+                        Lie API (it really doesn't), Loopin Thru Hoops is
+                        a must have for those fantasy basketball leagues!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <section class="portfolio" id="portfolio">
+            <h3 class="subtitle">Portfolio</h3>
+            <h3>Featured Projects</h3>
+            <div class="projectImageContainer">
+                <img src="./assets/loopinThruHoops.png" alt="An image displaying the Loopin Thru Hoops website" />
+            </div>
+            <div class="projectTextContainer">
+                <h3>Loopin Thru Hoops</h3>
+                <h4>JavaScript | Firebase | RESTful API | Sass | HTML5</h4>
+                <p>Want to see how the stars of the 2021 - 2022 NBA season fare against each other? Using the Ball Don't
+                    Lie API (it really doesn't), Loopin Thru Hoops is
+                    a must have for those fantasy basketball leagues!
+                </p>
+                <div class="buttonContainer">
+                    <a href="https://loopinthruhoops.netlify.app/">See live</a>
+                    <a href="https://github.com/CLTWO/loopinThruHoops">GitHub</a>
+                </div>
+            </div>
+            <div class="projectImageContainer">
+                <img src="./assets/expenseAnalyzer.png" alt="An image displaying the Expense Analyzer" />
+            </div>
+            <div class="projectTextContainer">
+                <h3>Expense Analyzer</h3>
+                <h4>React | JavaScript | Firebase | Sass | HTML5</h4>
+                <p>An expense analyzer allowing the user to filter expenses (erm... my expenses) by category. Have I
+                    been spending too much?!
+                </p>
+                <div class="buttonContainer">
+                    <a href="https://expenseanalyzer.netlify.app/">See live</a>
+                    <a href="https://github.com/alvinwquach/alvin-quach-project-three">GitHub</a>
+                </div>
+            </div>
+            <div class="projectImageContainer">
+                <img src="./assets/notSoTrivialPursuit.png"
+                    alt="An image of the Not So Trivial Pursuit Game in action" />
+            </div>
+            <div class="projectTextContainer">
+                <h3>Not So Trivial Pursuit</h3>
+                <h4>React | JavaScript | Firebase | RESTful API | Sass | HTML5</h4>
+                <p>
+                    Are you ready to test your knowledge of trivia? Check out Not So Trivial Pursuit! Not So Trivial
+                    Pursuit uses the Open Trivia DB API generates quizzes based on a wide range of categories to choose
+                    from. Take on Darth Maul in this friendly and family fun game! Paired programming project with
+                    <a href="https://github.com/Hughzhoutrt/" class="credit">Yuhui (Hugh) Zhou</a>, and
+                    <a href="https://github.com/Spencer-Lukens" class="credit">Spencer Lukens</a>.
+                </p>
+                <div class="buttonContainer">
+                    <a href="https://not-so-trivial-pursuit-star-war.netlify.app/">See live</a>
+                    <a href="https://github.com/Cohort-37-Group7/Not-So-Trivial-Pursuit">GitHub</a>
+                </div>
+            </div>
+         -->
+        <!-- Contact Form -->
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <h2 class="subtitle">Contact</h2>
+                <h2 class="sectionHeading">Get in
+                    touch!</h2>
+                <p>If you have any questions about me or my projects or want to debate the hottest shoes and craft
+                    beers, I'm your man!</p>
+                <p>Drop a comment, question, concern or even a new beer for me to try. Cheers! 🍻</p>
+                <div class=contactMethods>
+                    <ul class="socialMedia">
+                        <li>
+                            <a href="https://github.com/alvinwquach"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/alvin-quach-02a7314b/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/MisterSJC"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                    <form action="https://formspree.io/f/mdobokkz" method="POST" id="contactForm">
+                        <div class="formInput">
+                            <label for="name" class="srOnly"></label>
+                            <input type="text" name="name" id="name" placeholder="Name" required />
+                            <label for="email" class="srOnly"></label>
+                            <input type="email" name="email" id="email" placeholder="Email" required />
+                        </div>
+                        <div class="messageInput">
+                            <label for="message" class="srOnly"></label>
+                            <textarea name="message" id="message" cols="80" rows="10"
+                                placeholder="Hi Alvin, I love web development and basketball too! Let's meet for a quick chat over coffee!"
+                                required></textarea>
+                        </div>
+                        <div class="formSubmit">
+                            <button class="submitButton" type="submit">Send it off!</button>
+                            <p id="formStatus"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Designed by Frenify & developed by Alvin Quach&copy</p>
+    </footer>
+</body>
+
+</html>
