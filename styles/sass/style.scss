@@ -82,6 +82,10 @@ contact .sectionHeading {
   text-align: center;
 }
 
+.sectionHeading {
+  color: $bronze;
+}
+
 .wrapper {
  margin: 0 auto;
  width: 1440px;
@@ -161,9 +165,8 @@ contact .descriptionText {
 }
 
 .subtitle {
-  font-size: 4rem;
+  font-size: 3rem;
   color: $bronze;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -183,7 +186,7 @@ li {
   height: 2.5vh;
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 10px;
+  padding: 35px;
   margin: 10px;
 }
 
@@ -206,9 +209,6 @@ li {
     right: 0;
     top: -77rem;
     z-index: 10;
-    .sophieName {
-      display: none;
-    }
     li {
       padding: 2rem;
     }
