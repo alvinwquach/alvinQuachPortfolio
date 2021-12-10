@@ -360,6 +360,11 @@ ul li a:hover {
   display: block;
 }
 
+@media (max-width: 385px) {
+  formInput {
+    width: 50%;
+  }
+}
 /*Styling for the skills section*/
 .skills li {
   font-size: 3rem;
@@ -384,6 +389,18 @@ ul li {
   margin: 15px;
 }
 
+@media (max-width: 640px) {
+  .skills {
+    padding-bottom: 2.5rem;
+  }
+
+  .iconsContainer li {
+    margin: 2rem;
+  }
+  .iconsContainer li i {
+    font-size: 8rem;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -522,6 +539,32 @@ img {
   text-shadow: 1px 1px 2px #427388;
 }
 
+@media (max-width: 1125px) {
+  .projects .projectContainer {
+    padding-top: 0;
+  }
+  .projects .projectContainer .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .project:nth-of-type(2n + 1) .projectImageContainer,
+.project:nth-of-type(2n) .projectImageContainer {
+    margin: 0;
+  }
+  .project:nth-of-type(2n + 1) .projectTextContainer,
+.project:nth-of-type(2n) .projectTextContainer {
+    padding: 0;
+  }
+
+  .project .projectTextContainer,
+.project .projectImageContainer {
+    width: 95%;
+  }
+}
 nav {
   display: block;
 }
