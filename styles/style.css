@@ -311,8 +311,24 @@ input:hover {
   cursor: pointer;
 }
 
+.contactMethod .socialMediaIcons {
+  margin: 0.5rem 3rem 0 0;
+}
+
 .socialMedia {
-  display: inline-block;
+  font-size: 4rem;
+}
+
+ul li {
+  font-size: 5rem;
+  list-style: none;
+}
+ul li a {
+  color: #987750;
+}
+
+.fab {
+  font-weight: 400;
 }
 
 .sectionHeading {
@@ -392,6 +408,66 @@ a {
 }
 
 /* Flexbox */
+/*Styling for the portfolio section*/
+.sbs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 650px;
+  height: 650px;
+}
+
+nav {
+  display: block;
+}
+
+.menu ul {
+  text-transform: uppercase;
+  color: #987750;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.menu ul a {
+  color: #987750;
+}
+
+contact .sectionHeading {
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 90%;
+}
+
+.about {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .heroImage img {
   border-radius: 50%;
   display: block;
@@ -401,28 +477,16 @@ a {
   border: 1px #987750;
 }
 
-.wrapper {
-  height: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .typingAnimation {
   width: 34ch;
-  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  -webkit-animation: typing 2s steps(22);
+          animation: typing 2s steps(22);
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  text-align: center;
 }
 
 @-webkit-keyframes typing {
@@ -468,6 +532,10 @@ h3 {
   font-size: 30px;
 }
 
+contact .descriptionText {
+  font-size: 2rem;
+}
+
 .subtitle {
   font-size: 18px;
   color: #987750;
@@ -490,7 +558,14 @@ li {
   text-align: center;
   height: 2.5vh;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 10px;
-  margin: 0 auto;
+  margin: 10px;
+}
+
+.footer {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
