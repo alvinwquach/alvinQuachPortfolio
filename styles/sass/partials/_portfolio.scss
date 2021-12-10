@@ -1,5 +1,3 @@
-/*Styling for projects*/
-
 .projects {
   background: $black;
   padding: 5rem 0;
@@ -121,5 +119,11 @@ img {
   .project .projectTextContainer,
   .project .projectImageContainer {
     width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .project {
+    padding: 2rem 1rem;
   }
 }
