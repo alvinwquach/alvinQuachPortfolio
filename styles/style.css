@@ -433,8 +433,8 @@ nav {
 
 .menu ul {
   text-transform: uppercase;
-  color: #987750;
-  font-size: 2rem;
+  color: #181715;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,6 +451,73 @@ nav {
 }
 .menu ul a {
   color: #987750;
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 3rem 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.menu ul li {
+  padding: 0 2rem;
+}
+.menu ul a {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.menu ul a:hover, .menu ul a:focus {
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.05);
+}
+
+input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked + .dropdown {
+  top: 0;
+}
+
+label[for=toggle] {
+  position: absolute;
+  right: 1rem;
+  padding: 3rem;
+  visibility: hidden;
+}
+
+label[for=toggle]:hover {
+  cursor: pointer;
+}
+
+.button,
+input[type=submit] {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: none;
+}
+.button:hover, .button:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
 }
 
 contact .sectionHeading {
@@ -487,6 +554,13 @@ contact .sectionHeading {
   font-family: monospace;
   font-size: 2em;
   text-align: center;
+}
+
+.blogPost {
+  color: #987750;
+}
+.blogPost:hover {
+  color: white;
 }
 
 @-webkit-keyframes typing {
@@ -537,7 +611,7 @@ contact .descriptionText {
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 4rem;
   color: #987750;
   text-transform: uppercase;
   text-align: center;
@@ -568,4 +642,41 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 780px) {
+  label[for=toggle] {
+    visibility: visible;
+    z-index: 10;
+  }
+
+  .menu .dropdown {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 6rem 0;
+    background: #1f1f1ffd;
+    position: absolute;
+    right: 0;
+    top: -77rem;
+    z-index: 10;
+  }
+  .menu .dropdown .sophieName {
+    display: none;
+  }
+  .menu .dropdown li {
+    padding: 2rem;
+  }
+}
+@media (max-width: 560px) {
+  form input[type=text],
+form input[type=email] {
+    width: 100%;
+  }
+
+  form input[type=email] {
+    margin-top: 2rem;
+  }
 }
