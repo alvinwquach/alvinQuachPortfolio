@@ -313,6 +313,7 @@ input:hover {
 
 .contactMethod .socialMediaIcons {
   margin: 0.5rem 3rem 0 0;
+  padding: 50px;
 }
 
 .socialMedia {
@@ -352,7 +353,8 @@ ul li a {
 }
 
 .contact p {
-  font-size: 1.25rem;
+  font-size: 3rem;
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -408,8 +410,74 @@ a {
 }
 
 /* Flexbox */
-/*Styling for the portfolio section*/
-.sbs-container {
+.projects {
+  background: #1d1b19;
+  padding: 5rem 0;
+}
+.projects h2 {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.projects .projectContainer {
+  background: #1d1b19;
+  padding: 5rem 0;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 2rem;
+}
+.project .projectImageContainer {
+  width: 50%;
+}
+.project .projectTextContainer {
+  width: 50%;
+}
+.project .projectTextContainer p {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.project:nth-of-type(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+.project:nth-of-type(even) .projectImageContainer {
+  margin-left: 5rem;
+}
+.project:nth-of-type(even) .projectTextContainer {
+  padding-left: 1rem;
+}
+.project:nth-of-type(even) .projectTextContainer .buttonContainer a {
+  margin-left: 0.5rem;
+}
+
+.project:nth-of-type(odd) .projectImageContainer {
+  margin-right: 5rem;
+}
+.project:nth-of-type(odd) .projectTextContainer {
+  padding-right: 1rem;
+}
+.project:nth-of-type(odd) .projectTextContainer .buttonContainer a {
+  margin-right: 0.5rem;
+}
+
+.credit {
+  color: #987750;
+}
+.credit:hover {
+  color: #fff;
+}
+
+.buttonContainer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,12 +487,11 @@ a {
           flex-direction: column;
 }
 
-.project-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 650px;
-  height: 650px;
+.liveButton, .githubButton {
+  color: rgba(255, 255, 255, 0.05);
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  margin: 15px;
 }
 
 nav {
@@ -561,6 +628,49 @@ contact .sectionHeading {
 }
 .blogPost:hover {
   color: white;
+}
+
+.projectImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.projectImageContainer img {
+  max-width: 50%;
+}
+
+.projectTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.projectTextContainer h3, .projectTextContainer h4, .projectTextContainer p {
+  width: 50%;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.buttonContainer p {
+  font-size: 2rem;
+}
+.buttonContainer a {
+  font-size: 2rem;
+  width: 50%;
+  color: #987750;
+}
+.buttonContainer a:hover {
+  color: #fff;
 }
 
 @-webkit-keyframes typing {
