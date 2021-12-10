@@ -313,7 +313,6 @@ input:hover {
 
 .contactMethod .socialMediaIcons {
   margin: 0.5rem 3rem 0 0;
-  padding: 50px;
 }
 
 .socialMedia {
@@ -327,9 +326,8 @@ ul li {
 ul li a {
   color: #987750;
 }
-
-.fab {
-  font-weight: 400;
+ul li a:hover {
+  color: white;
 }
 
 .sectionHeading {
@@ -353,12 +351,11 @@ ul li a {
 }
 
 .contact p {
-  font-size: 3rem;
-  letter-spacing: 1px;
+  font-size: 1.25rem;
   text-align: center;
 }
 
-.contactMethods {
+.contactMethod {
   display: block;
 }
 
@@ -418,9 +415,16 @@ a {
   padding-bottom: 5rem;
   text-align: center;
 }
+.projects h3 {
+  color: #fff;
+}
 .projects .projectContainer {
   background: #1d1b19;
   padding: 5rem 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 .project {
@@ -628,49 +632,6 @@ contact .sectionHeading {
 }
 .blogPost:hover {
   color: white;
-}
-
-.projectImageContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.projectImageContainer img {
-  max-width: 50%;
-}
-
-.projectTextContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.projectTextContainer h3, .projectTextContainer h4, .projectTextContainer p {
-  width: 50%;
-}
-
-.buttonContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.buttonContainer p {
-  font-size: 2rem;
-}
-.buttonContainer a {
-  font-size: 2rem;
-  width: 50%;
-  color: #987750;
-}
-.buttonContainer a:hover {
-  color: #fff;
 }
 
 @-webkit-keyframes typing {
