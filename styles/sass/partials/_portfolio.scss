@@ -1,11 +1,73 @@
-/*Styling for the portfolio section*/
-.sbs-container {
+.projects {
+  background: $black;
+  padding: 5rem 0;
+  h2 {
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  .projectContainer {
+    background: $black;
+    padding: 5rem 0;
+  }
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  padding: 5rem 2rem;
+  .projectImageContainer {
+    width: 50%;
+  }
+  .projectTextContainer {
+    width: 50%;
+    p {
+      padding-bottom: 2rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+.project:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+  .projectImageContainer {
+    margin-left: 5rem;
+  }
+  .projectTextContainer {
+    padding-left: 1rem;
+    .buttonContainer a {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.project:nth-of-type(odd) {
+  .projectImageContainer {
+    margin-right: 5rem;
+  }
+  .projectTextContainer {
+    padding-right: 1rem;
+    .buttonContainer a {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.credit {
+  color: $bronze;
+  &:hover {
+    color: $white;
+  }
+}
+
+.buttonContainer a {
   display: flex;
   flex-direction: column;
 }
 
-.project-container {
-  display: flex;
-  width: 650px;
-  height: 650px;
+.liveButton, .githubButton {
+  color: $accent;
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  margin: 15px;
 }
