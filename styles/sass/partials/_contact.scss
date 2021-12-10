@@ -49,20 +49,19 @@ input {
   margin: 0.5rem 3rem 0 0;
 }
 
-.socialMedia {
+/*.socialMedia {
   font-size: 4rem;
-}
+}*/
 
 ul li {
   font-size: 5rem;
   list-style: none;
   a {
     color: $bronze;
+    &:hover {
+      color: white;
+    }
   }
-}
-
-.fab {
-  font-weight: 400;
 }
 
 
@@ -87,10 +86,12 @@ ul li {
 }
 
 .contact p {
-  font-size: 1.25rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
   text-align: center;
 }
 
-.contactMethods {
+.contactMethod {
   display: block;
 }
