@@ -45,9 +45,26 @@ input {
   }
 }
 
-.socialMedia {
-  display: inline-block;
+.contactMethod .socialMediaIcons {
+  margin: 0.5rem 3rem 0 0;
 }
+
+.socialMedia {
+  font-size: 4rem;
+}
+
+ul li {
+  font-size: 5rem;
+  list-style: none;
+  a {
+    color: $bronze;
+  }
+}
+
+.fab {
+  font-weight: 400;
+}
+
 
 .sectionHeading {
   font-size: 24px;
