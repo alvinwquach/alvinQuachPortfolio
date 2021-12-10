@@ -1,17 +1,42 @@
 /*Styling for the skills section*/
 
-.skills li {
-  font-size: 3rem;
+.skills {
+  padding-bottom: 5rem;
+  background: $lightGreen;
+  h2 {
+    padding-bottom: 8rem;
+    margin-top: -9rem;
+    text-align: center;
+  }
 }
 
-ul {
+.iconsContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   li {
-    display: block;
-    padding: 20px;
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 4rem;
+    width: 8rem;
+    p {
+      width: 85%;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+  .skills {
+    padding-bottom: 2.5rem;
+  }
+  .iconsContainer li {
+    margin: 2rem;
+    i {
+      font-size: 8rem;
+    }
   }
 }
