@@ -382,11 +382,8 @@ ul {
       flex-wrap: wrap;
 }
 ul li {
-  display: flex;
-  flex-direction: column;
+  display: block;
   align-items: center;
-  margin: 14rem;
-  width: 3rem 4rem;
 }
 
 @media (max-width: 640px) {
