@@ -822,7 +822,7 @@ form input[type=email] {
   }
 }
 
-@media (max-width: 411px) {
+@media (max-width: 560px) and (max-width: 411px) {
   form input[type=text],
 form input[type=email] {
     width: 65%;
@@ -830,14 +830,4 @@ form input[type=email] {
 
   form input[type=email] {
     margin-top: 1.5rem;
-  }
-  
-  @media (max-width: 359px) {
-  form input[type=text],
-form input[type=email] {
-    width: 65%;
-  }
-
-  form input[type=email] {
-    margin-top: 1.25rem;
   }
