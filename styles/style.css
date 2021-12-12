@@ -791,7 +791,6 @@ li {
   label[for=toggle] {
     visibility: visible;
     z-index: 20;
-    color: $white;
   }
 
   .menu .dropdown {
