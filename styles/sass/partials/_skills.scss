@@ -11,7 +11,9 @@
 
 .iconsContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 14rem;
+  margin: 3rem 4rem;
   align-items: center;
   flex-wrap: wrap;
   li {
