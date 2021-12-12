@@ -2,6 +2,7 @@
 
 .skills {
   padding-bottom: 5rem;
+  padding: 25px;
   h2 {
     padding-bottom: 8rem;
     margin-top: -9rem;
@@ -11,16 +12,15 @@
 
 .iconsContainer {
   display: flex;
-  flex-direction: column;
-  width: 14rem;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 14rem;
-    text-align: center;
+    margin: 2.5rem 4rem;
+    width: 8rem;
     p {
       width: 85%;
       text-align: center;
