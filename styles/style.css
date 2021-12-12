@@ -821,3 +821,13 @@ form input[type=email] {
     margin-top: 2rem;
   }
 }
+
+@media (max-width: 560px) {
+  form input[type=text],
+form input[type=email] {
+    width: 50%;
+  }
+
+  form input[type=email] {
+    margin-top: 2rem;
+  }
