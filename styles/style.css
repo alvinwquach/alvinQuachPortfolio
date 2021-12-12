@@ -367,7 +367,7 @@ ul li a:hover {
 /*Styling for the skills section*/
 .skills li {
   font-size: 3rem;
-  padding-left: 8rem;
+  margin: 2rem;
 }
 
 ul {
