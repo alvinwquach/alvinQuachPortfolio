@@ -198,7 +198,7 @@ contact .descriptionText {
 @media (max-width: 780px) {
   label[for="toggle"] {
     visibility: visible;
-    z-index: 10;
+    z-index: 5;
   }
   .menu .dropdown {
     flex-direction: column;
@@ -207,7 +207,7 @@ contact .descriptionText {
     background: #1f1f1ffd;
     position: absolute;
     right: 0;
-    top: -77rem;
+    top: -50rem;
     z-index: 10;
     li {
       padding: 2rem;
