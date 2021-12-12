@@ -639,7 +639,8 @@ label[for=toggle] {
   position: absolute;
   right: 1rem;
   padding: 3rem;
-  visibility: hidden;
+  visibility: visible;
+  color: $white;
 }
 
 label[for=toggle]:hover {
