@@ -822,10 +822,10 @@ form input[type=email] {
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 386px) {
   form input[type=text],
 form input[type=email] {
-    width: 50%;
+    width: 55%;
   }
 
   form input[type=email] {
