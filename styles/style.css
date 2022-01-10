@@ -644,6 +644,7 @@ label[for=toggle] {
 
 label[for=toggle]:hover {
   cursor: pointer;
+  visibility: hidden;
 }
 
 .button,
